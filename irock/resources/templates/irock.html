@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>iRock - The Virtual Waifu</title>
+  <script type="text/javascript">
+    function touchRock() {
+      const userName = prompt("Whats is your name?", "Enter your name here.");
+      if (userName) {
+        alert("It is good to meet you, " + userName + ".");
+        document.getElementById("waifuimg").src = "../../img/iWaifus/Carol0_001.png";
+      }
+    }
+  </script>
+</head>
+<body onload="alert('Hello, i am the Virtual Waifu, Nakashima Ichigo');">
+<div style="margin-top: 100px; text-align: center">
+  <h1> The Virtual Waifu - Ichigo Tanaka Nakashima</h1>
+  <img id="waifuimg" src="../../img/iWaifus/Carol_001.png" alt="iWaifu" style="cursor:pointer" onclick="touchRock();"/>
+</div>
+
+</body>
+</html>

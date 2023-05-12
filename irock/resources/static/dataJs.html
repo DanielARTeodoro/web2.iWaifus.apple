@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Data JS</title>
+</head>
+<body>
+
+<div style='float:right'>
+  <IMG
+    SRC="../../img/iWaifus/Jesica_001.png"
+    alt="Jesica">
+</div>
+
+<h2> JavaScript Uso de Data </h2>
+
+<script type="text/javascript">
+
+  document.write(Date());
+
+  document.write("\n", "<br>");
+
+</script>
+<br>
+<script type="text/javascript">
+
+  function iniciaTempo()
+  {
+    var hoje=new Date();
+    var hora=hoje.getHours();
+    var minuto=hoje.getMinutes();
+    var segundo=hoje.getSeconds();
+
+    minuto=atualiza(minuto);
+    segundo=atualiza(segundo);
+
+    document.getElementById("txt").innerHTML=hora+":"+minuto+":"+segundo;
+    tempo=setTimeout("iniciaTempo()",500);
+
+    function atualiza(i)
+    {
+      if (i<10)
+        {
+          i="0"+i;
+        }
+      return i;
+    }
+  }
+
+</script>
+
+<div id="txt">
+  <script type="text/javascript">document.write(iniciaTempo())</script>
+</div>
+
+
+</body>
+</html>
